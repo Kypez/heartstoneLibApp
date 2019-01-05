@@ -5,4 +5,20 @@ import { Component } from '@angular/core';
   templateUrl: 'tabs.page.html',
   styleUrls: ['tabs.page.scss']
 })
-export class TabsPage {}
+export class TabsPage {
+	ionViewWillEnter() {
+		console.log('ionViewWillEnter');
+	}
+
+	ionViewDidEnter() {
+		console.log('ionViewDidEnter');
+	}
+
+	ionViewWillLeave() {
+		console.log('ionViewWillLeave');
+	}
+
+	ionViewDidLeave() {
+		console.log('ionViewDidLeave');
+	}
+}
